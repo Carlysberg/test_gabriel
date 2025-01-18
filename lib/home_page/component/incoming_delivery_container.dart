@@ -95,7 +95,9 @@ class IncomingDeliveryContainer extends StatelessWidget {
                     ],
                   ),
                 ),
-                Image.asset("assets/images/bus_with_dashes.png"),
+                SizedBox(
+                    width: 70,
+                    child: Image.asset("assets/images/bus_with_dashes.png")),
                 Flexible(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
