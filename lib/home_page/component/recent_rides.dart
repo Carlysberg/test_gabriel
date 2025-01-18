@@ -9,7 +9,7 @@ class RecentRides extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 210,
       child: ListView.builder(
           itemCount: 3,
           itemBuilder: (context, index) {
@@ -48,7 +48,7 @@ class RecentRides extends StatelessWidget {
                 ],
               ),
               trailing: Text(
-                "GHC 30",
+                "GHC 33",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

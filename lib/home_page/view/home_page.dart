@@ -1,13 +1,32 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:test_gabriel/common/constants.dart';
+import 'package:test_gabriel/common/widget/custom_alert_dialog.dart';
 import 'package:test_gabriel/home_page/component/incoming_delivery_container.dart';
 import 'package:test_gabriel/home_page/component/location_button.dart';
 import 'package:test_gabriel/home_page/component/recent_rides.dart';
 
 @RoutePage()
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    ///Just to display the emergency ride alert dialog
+    Future.delayed(Duration(minutes: 1), () {
+      _showAlertDialog();
+    });
+    super.initState();
+  }
+
+  void _showAlertDialog() {
+    showDialog(context: context, builder: (context) => CustomAlertDialog());
+  }
 
   @override
   Widget build(BuildContext context) {
