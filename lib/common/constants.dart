@@ -6,5 +6,5 @@ class Constants {
   static const kMediumTitleTextStyle =
       TextStyle(fontSize: 16, fontWeight: FontWeight.bold);
   static const kSmallTitleTextStyle = TextStyle(color: Colors.black);
-  static const kSmallTextStyle = TextStyle(color: Colors.black54);
+  static const kSmallTextStyle = TextStyle(color: Colors.black54, fontSize: 12);
 }

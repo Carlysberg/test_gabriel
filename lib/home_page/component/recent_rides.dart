@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_gabriel/common/constants.dart';
 import 'package:test_gabriel/common/enum/order_status.dart';
 
 class RecentRides extends StatelessWidget {
@@ -37,7 +38,8 @@ class RecentRides extends StatelessWidget {
                     ),
                     child: Text(
                       OrderStatus.delivered.text,
-                      style: TextStyle(color: Color(0xFF53866B)),
+                      style: Constants.kSmallTextStyle
+                          .copyWith(color: Color(0xFF53866B)),
                     ),
                   ),
                   Flexible(

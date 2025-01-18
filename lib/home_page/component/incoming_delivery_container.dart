@@ -41,7 +41,9 @@ class IncomingDeliveryContainer extends StatelessWidget {
                     border: Border.all(color: Colors.grey),
                     color: Color(OrderStatus.incoming.backgroundColor),
                   ),
-                  child: Text(OrderStatus.incoming.text),
+                  child: Text(OrderStatus.incoming.text,
+                      style: Constants.kSmallTextStyle
+                          .copyWith(color: Colors.black)),
                 )
               ],
             ),
